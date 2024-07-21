@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "player-visibility-for-hz",
+	"version": "${version}",
+	"name": "Player Visibility For HZ",
+	"description": "Hides players when they are nearby. Intended for Hypixel Zombies!",
+	"authors": [
+		"Totorewa <totorewa@outlook.com>"
+	],
+	"contact": {
+		"homepage": "https://github.com/totorewa",
+		"sources": "https://github.com/totorewa/player-visibility-for-hz"
+	},
+	"license": "MIT",
+	"icon": "assets/player-visibility-for-hz/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"github.totorewa.playervisibilityhz.PlayerVisibilityForHZ"
+		]
+	},
+	"mixins": [
+		"player-visibility-for-hz.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.6",
+		"minecraft": ">=1.16.1",
+		"java": ">=8",
+		"fabric": "*"
+	},
+	"suggests": {
+	}
+}
